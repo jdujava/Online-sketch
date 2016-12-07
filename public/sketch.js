@@ -4,7 +4,7 @@ function setup() {
   createCanvas(500,500);
   background(51);
 
-  socket = io.connect('http://localhost:5000');
+  socket = io.connect('https://whispering-shelf-36846.herokuapp.com/');
   socket.on('mouse', newDrawing);
   function newDrawing(data) {
     noStroke();
