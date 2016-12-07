@@ -1,9 +1,10 @@
 var socket;
-var p = getElementById('peopleCounter');
 
 function setup() {
   createCanvas(1000,800);
   background(51);
+
+  var p = getElementById('peopleCounter');
 
   socket = io.connect('https://whispering-shelf-36846.herokuapp.com/');
   socket.on('mouse', newDrawing);
