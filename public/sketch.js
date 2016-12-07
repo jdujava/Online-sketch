@@ -4,7 +4,7 @@ function setup() {
   createCanvas(500,500);
   background(51);
 
-  socket = io.connect('http://localhost:3000');
+  socket = io.connect('http://localhost:5000');
   socket.on('mouse', newDrawing);
   function newDrawing(data) {
     noStroke();
