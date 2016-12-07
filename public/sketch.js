@@ -1,7 +1,7 @@
 var socket;
 
 function setup() {
-  createCanvas(500,500);
+  createCanvas(1000,800);
   background(51);
 
   socket = io.connect('https://whispering-shelf-36846.herokuapp.com/');
