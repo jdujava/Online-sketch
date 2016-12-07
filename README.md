@@ -1,2 +1,5 @@
 # Online-sketch
-Trying node.js
+
+My hobby project. This sketch is shared between every client.
+
+Dujava Jonas
