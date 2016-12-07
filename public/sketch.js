@@ -16,7 +16,7 @@ function setup() {
     ellipse(data.x,data.y,20,20);
   }
   function updateCount(data) {
-    p.html("Počet pripojených ľudí : " + data);
+    p.innerHTML = "Počet pripojených ľudí : " + data;
   }
 }
 
