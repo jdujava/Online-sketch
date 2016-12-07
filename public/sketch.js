@@ -3,13 +3,19 @@ var socket;
 function setup() {
   createCanvas(1000,800);
   background(51);
-
+  var p = createP("Počet pripojených ľudí : 0");
+  
   socket = io.connect('https://whispering-shelf-36846.herokuapp.com/');
   socket.on('mouse', newDrawing);
+  socket.on('count', updateCount);
+
   function newDrawing(data) {
     noStroke();
     fill(255,0,100);
-    ellipse(data.x,data.y,20,20)
+    ellipse(data.x,data.y,20,20);
+  }
+  function updateCount(data) {
+    p.html("Počet pripojených ľudí : " + data);
   }
 }
 
